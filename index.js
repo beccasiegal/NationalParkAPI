@@ -27,7 +27,7 @@ function displayResults(responseJson) {
 function getNationalParkInfo(query,limit=10) {
   const params = {
     api_key: apiKey,
-    q: query,
+    stateCode: query,
     limit: limit-1,
   };
   const queryString = formatQueryParams(params)
